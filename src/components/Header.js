@@ -1,12 +1,13 @@
 import React from 'react';   
+import BodyWrapper from './BodyWrapper';
 
 class Header extends React.Component{
   style = {
-    base: {
-      padding: "10px",
-      background: "#031a3a",
-      color: "#fff"
-    }
+    padding: 10,
+    background: "#031a3a",
+    color: "#fff",
+    fontWeight: 300,
+    fontSize: 20
   }
 
   constructor(props){
@@ -23,11 +24,10 @@ class Header extends React.Component{
   }
 
   render(){
-    return <div style={ this.style.base }>
-      {this.props.title} { this.props.isim}
-      <button onClick={this.handleLogin}>
-        {this.state.status ? 'Çıkış Yap' : 'Giriş Yap'}
-      </button>
+    return <div style={ this.style }>
+      <BodyWrapper>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat enim, quae. Ad vel numquam sint harum voluptas voluptates perferendis rerum velit soluta, repellat omnis? Unde aperiam quos error, itaque?
+      </BodyWrapper>
     </div>
   }
 }
