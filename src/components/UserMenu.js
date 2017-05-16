@@ -22,7 +22,7 @@ class UserMenu extends React.Component{
   render(){
 
     var button = null;
-    if(this.loggedIn == 0){
+    if(this.loggedIn === 0){
       button = <span><a href="/register">Register</a> / <a href="/login">Login</a></span>;
     }else{
       button = <a href="/profile">Profile</a>;

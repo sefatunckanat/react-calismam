@@ -7,7 +7,6 @@ class Header extends React.Component{
   style = {
     padding: 10,
     background: "#031a3a",
-    textAlign: "center",
     fontSize: 0
   }
 

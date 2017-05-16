@@ -16,7 +16,7 @@ class AppLogo extends React.Component{
   render(){
     return <div style={ this.style }>
       <a href='/'>
-        <img style={ this.style.logo } src={svgAppLogo} className="appLogo" />
+        <img style={ this.style.logo } src={svgAppLogo} className="appLogo" alt="App Logo"/>
       </a>
     </div>
   }
