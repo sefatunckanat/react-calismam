@@ -1,13 +1,14 @@
 import React from 'react';   
 import BodyWrapper from './BodyWrapper';
+import AppLogo from './AppLogo';
+import UserMenu from './UserMenu';
 
 class Header extends React.Component{
   style = {
     padding: 10,
     background: "#031a3a",
-    color: "#fff",
-    fontWeight: 300,
-    fontSize: 20
+    textAlign: "center",
+    fontSize: 0
   }
 
   constructor(props){
@@ -26,7 +27,8 @@ class Header extends React.Component{
   render(){
     return <div style={ this.style }>
       <BodyWrapper>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat enim, quae. Ad vel numquam sint harum voluptas voluptates perferendis rerum velit soluta, repellat omnis? Unde aperiam quos error, itaque?
+        <AppLogo/>
+        <UserMenu loggedIn="0"/>
       </BodyWrapper>
     </div>
   }
