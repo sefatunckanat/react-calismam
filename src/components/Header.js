@@ -6,7 +6,7 @@ import UserMenu from './UserMenu';
 class Header extends React.Component{
   style = {
     padding: 10,
-    background: "#031a3a",
+    background: "#31313a",
     fontSize: 0
   }
 
@@ -14,6 +14,7 @@ class Header extends React.Component{
     super(props);
     this.state = { status: false }
 
+    this.name = props.name;
     this.handleLogin = this.handleLogin.bind(this);
   }
   
@@ -26,8 +27,8 @@ class Header extends React.Component{
   render(){
     return <div style={ this.style }>
       <BodyWrapper>
-        <AppLogo/>
-        <UserMenu loggedIn="0"/>
+        <AppLogo width="32" height="32"/>
+        <UserMenu loggedIn="1" userName={ this.name }/>
       </BodyWrapper>
     </div>
   }

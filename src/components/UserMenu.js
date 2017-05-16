@@ -13,9 +13,11 @@ class UserMenu extends React.Component{
   }
 
   loggedIn = null;
+  userName = "";
   constructor(props) {
     super(props);
     this.loggedIn = props.loggedIn * 1;
+    this.userName = props.userName;
   }
 
 
@@ -27,10 +29,9 @@ class UserMenu extends React.Component{
     }else{
       button = <a href="/profile">Profile</a>;
     }
-    console.log(button);
 
     return <div style={this.style}>
-      { button }
+      { button } | { this.userName }
     </div>
   }
 }
