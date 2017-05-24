@@ -16,7 +16,8 @@ class AppLogo extends React.Component{
       opacity: 1,
       margin: "0 auto",
       height: 32,
-      width: 32
+      width: 32,
+      objectFit: "cover"
     }
   }
 

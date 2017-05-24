@@ -6,7 +6,7 @@ import styles from './stylesheets/master.css'
 
 const app = (
   <div>
-    <Header name="Sefa"/>
+    <Header name="App"/>
   </div>
 );
 
